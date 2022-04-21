@@ -1,0 +1,33 @@
+@use 'colors';
+@use 'fonts';
+@use 'responsive';
+
+
+/* Skill section */
+.skill-section {
+    background-color: #575757;
+
+    .skill-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skill-box {
+        background-color: #333333;
+        border-radius: 30px;
+        padding: 30px 10px;
+        max-width: 280px;
+        margin: 20px;
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+            background-color: #575757;
+            transition: ease-in-out .7s;
+        }
+    }
+    
+    .skill-Icon {
+        padding-bottom: 35px;
+    }
+}

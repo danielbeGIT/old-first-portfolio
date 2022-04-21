@@ -1,0 +1,25 @@
+@use 'about';
+@use 'colors';
+@use 'fonts';
+@use 'headings';
+@use 'links';
+@use 'main';
+@use 'navigation';
+@use 'responsive';
+@use 'skill';
+
+* {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    font-family: fonts.$standard-font-family;
+    scroll-behavior: smooth;
+    transition: linear;
+    color: #fff;
+}
+
+section {
+    padding: 150px;
+}

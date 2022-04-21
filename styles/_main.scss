@@ -1,0 +1,19 @@
+@use 'colors';
+@use 'fonts';
+@use 'responsive';
+
+
+/* Main title and main section */
+.main-title {
+    font-size: fonts.$bigger-font-size;
+}
+
+.main-section {
+    background-image: url("../img/nightsky.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

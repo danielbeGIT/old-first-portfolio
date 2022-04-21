@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This website is my first portfolio">
+        <meta name="author" content="Daniel Be">
+        <title>Daniel's Portfolio</title>
+        <!-- CSS reference -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Navigation menu/bar-->
+            <nav>
+                <!-- Main Logo -->
+                <a href="index.html" class="logo">Daniel</a>
+                <a href="#contactMe" class="nav-link" onClick="currentSlide(2)">Contact</a>
+                <a href="#mySkill" class="nav-link">Skill</a>
+                <a href="#aboutMe" class="nav-link" onClick="currentSlide(1)">About</a>
+            </nav>
+        </header>
+        <!-- Main title/portfolio -->
+        <section class="main-section">
+            <div class="myIntroduction">
+                <h1 class="main-title">Daniel's<br><span>Portfolio</span></h1>
+                <p>Wants to become a Web designer / <br> Front end developer</p>
+                <a href="#aboutMe" class="infoButton" onClick="currentSlide(1)">More Info</a>
+            </div>
+        </section>
+        <!-- Skill section starts here -->
+        <section class="skill-section" id="mySkill">
+            <div class="heading">
+                <h2>What i know</h2>
+                <p>What i'm learning and trying to improve in</p>
+            </div>
+            <div class="skill-content">
+                <div class="skill-box">
+                    <img src="img/htmlicon.png" alt="HTMLicon" class="skill-Icon">
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut veritatis cum maxime doloremque iure quo dignissimos excepturi? 
+                        Aperiam voluptate.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="img/cssicon.png" alt="CSSicon" class="skill-Icon">
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut veritatis cum maxime doloremque iure quo dignissimos excepturi? 
+                        Aperiam voluptate.</p>
+                </div>
+                <div class="skill-box">
+                    <img src="img/jsicon.png" alt="JSicon" class="skill-Icon">
+                    <h3>Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut veritatis cum maxime doloremque iure quo dignissimos excepturi? 
+                        Aperiam voluptate.</p>
+                </div>
+            </div>
+        </section>
+        <!-- About me section starts here -->
+        <section class="about-section">
+            <div class="aboutSlides fade" id="aboutMe">
+                <div class="heading">
+                    <h2>About me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="content-container">
+                        <h3>Who am i.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam impedit vitae quo recusandae omnis minima alias, at ipsam sapiente. 
+                            <br><br> Lorem, ipsum dolor sit amet consectetur adip it ratione. Delectus eos eum repellendus nemo sunt nam molestias placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
+                            reiciendis minima repellat soluta dolorem accusantium aliquid pariatur! Beatae iure asperiores quos excepturi eum minima earum,
+                            voluptate exercitationem voluptates fuga quas?</p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img/jpscenery.jpg" alt="JapanScenery" class="imgStyle">
+                    </div>
+                </div>
+            </div>
+            <!-- Contact me section starts here -->
+            <div class="aboutSlides fade" id="contactMe"> 
+                <div class="heading">
+                    <h2>Contact Info</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="content-container">
+                        <h3>Feel free to contact!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam impedit vitae quo recusandae omnis minima alias, at ipsam sapiente. 
+                            <br><br> Lorem, ipsum dolor sit amet consectetur adip it ratione. Delectus eos eum repellendus nemo sunt nam molestias placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
+                            reiciendis minima repellat soluta dolorem accusantium aliquid pariatur! Beatae iure asperiores quos excepturi eum minima earum,
+                            voluptate exercitationem voluptates fuga quas?</p>
+                            <br><br>
+                            <a href ="mailto:abc@example.com?subject = Feedback&body = Message" class="mail-link">
+                                Contact me!
+                            </a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img/clearsky.jpg" alt="ClearSky" class="imgStyle">
+                    </div>
+                </div>
+            </div>
+            <!-- Slideshow buttons/dots starts here -->
+            <div class="dot-container">
+                <button class="dot" onClick="currentSlide(1)">1</button>
+                <button class="dot" onClick="currentSlide(2)">2</button>
+            </div>
+        </section>
+        <!-- JS reference -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
